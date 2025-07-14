@@ -10,7 +10,7 @@ export function setupSubsetCommand(program: Command) {
     .command("subset")
     .description("subset dist folder")
     .argument("<font_file>", "font file path")
-    .option("-l, --lang <lang>", "subset lang")
+    .option("-l, --lang <lang>", "subset lang", "en")
     .option("-f, --format <format>", "subset format")
     .action((file: string, options: ISubsetOptions) => {
       // TODO: subset font file
