@@ -16,10 +16,7 @@
   "files": [
     "dist"
   ],
-  "scripts": {
-    "lint": "eslint . --ext .ts",
-    "format": "npx prettier --write src/**/*.ts --parser typescript"
-  },
+  "scripts": {},
   "packageManager": "pnpm@10.13.1",
   "devDependencies": {
     "@types/commander": "^2.12.5",

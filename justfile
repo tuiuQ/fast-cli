@@ -1,5 +1,11 @@
 commit msg:
   @git commit -m "{{msg}}"
+
+lint:
+  @pnpm lint
+
+format:
+  @pnpm format
   
 clean:
   @rm -rf ./dist;
