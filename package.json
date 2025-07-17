@@ -12,6 +12,9 @@
   "bin": {
     "fast": "dist/main.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {},
   "packageManager": "pnpm@10.13.1",
   "devDependencies": {
