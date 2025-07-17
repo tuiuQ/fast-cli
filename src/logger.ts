@@ -42,9 +42,8 @@ export class Logger {
   /**
    * 错误日志
    */
-  error(message: string, ...args: any[]): void {
+  error(message: string, ...args: any[]): void { // eslint-disable-next-line @typescript-eslint/no-explicit-any
     if (this.level >= LogLevel.ERROR) {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       console.error(`\x1b[31m[ERROR]\x1b[0m ${this.prefix}${message}`, ...args)
     }
   }
@@ -52,9 +51,8 @@ export class Logger {
   /**
    * 警告日志
    */
-  warn(message: string, ...args: any[]): void {
+  warn(message: string, ...args: any[]): void { // eslint-disable-next-line @typescript-eslint/no-explicit-any
     if (this.level >= LogLevel.WARN) {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       console.warn(`\x1b[33m[WARN]\x1b[0m ${this.prefix}${message}`, ...args)
     }
   }
@@ -62,9 +60,8 @@ export class Logger {
   /**
    * 信息日志
    */
-  info(message: string, ...args: any[]): void {
+  info(message: string, ...args: any[]): void { // eslint-disable-next-line @typescript-eslint/no-explicit-any
     if (this.level >= LogLevel.INFO) {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       console.info(`\x1b[32m[INFO]\x1b[0m ${this.prefix}${message}`, ...args)
     }
   }
@@ -72,8 +69,7 @@ export class Logger {
   /**
    * 调试日志
    */
-  debug(message: string, ...args: any[]): void {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  debug(message: string, ...args: any[]): void { // eslint-disable-next-line @typescript-eslint/no-explicit-any
     if (this.level >= LogLevel.DEBUG) {
       console.debug(`\x1b[36m[DEBUG]\x1b[0m ${this.prefix}${message}`, ...args)
     }
