@@ -1,11 +1,11 @@
-import type { Command } from "commander";
+import type { Command } from "commander"
 import { createFontSubset } from "./createFontSubset"
 import { logger } from "../../logger"
 
 export interface ISubsetOptions {
-  lang: "en" | "es" | "pt" | "id";
-  format?: string;
-  output?: string;
+  lang: "en" | "es" | "pt" | "id"
+  format?: string
+  output?: string
 }
 
 /**
@@ -24,9 +24,8 @@ export function setupSubsetCommand(program: Command) {
       try {
         await createFontSubset(fontFile, options)
       } catch (error) {
-        logger.error('字体子集化失败:', error instanceof Error ? error.message : error)
+        logger.error("字体子集化失败:", error instanceof Error ? error.message : error)
         process.exit(1)
       }
-    });
+    })
 }
-

@@ -5,7 +5,7 @@ export enum LogLevel {
   ERROR = 0,
   WARN = 1,
   INFO = 2,
-  DEBUG = 3
+  DEBUG = 3,
 }
 
 /**
@@ -17,9 +17,9 @@ export class Logger {
   private level: LogLevel
   private prefix: string
 
-  constructor(level: LogLevel = LogLevel.INFO, prefix: string = '') {
+  constructor(level: LogLevel = LogLevel.INFO, prefix: string = "") {
     this.level = level
-    this.prefix = prefix ? `[${prefix}] ` : ''
+    this.prefix = prefix ? `[${prefix}] ` : ""
   }
 
   /**
@@ -78,4 +78,3 @@ export class Logger {
 
 // 默认导出实例
 export const logger = Logger.getInstance()
-

@@ -1,8 +1,8 @@
 /**
  * Fast CLI 主入口文件
- * 
+ *
  * 提供字体子集化和清理功能的命令行工具
- * 
+ *
  * @fileoverview 主程序入口，负责初始化命令行界面和注册所有子命令
  */
 
@@ -17,7 +17,7 @@ import { setupSubsetCommand } from "./commands/subset"
 const program = new Command("fast")
 
 // 设置程序版本信息
-program.version(pkg.version, '-v, --version', '显示版本号')
+program.version(pkg.version, "-v, --version", "显示版本号")
 
 /**
  * 注册所有子命令

@@ -4,8 +4,8 @@ export const digits = "0123456789"
 export const punctuation = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
 export const controlCharacters = ` \t\n\r`
 
-export const portugueseLowercaseLetters = "áàãâäåéèêëíìîïóòõôöúùûüçñýÿ";
-export const portugueseUppercaseLetters = "ÁÀÃÂÄÅÉÈÊËÍÌÎÏÓÒÕÔÖÚÙÛÜÇÑÝŸ";
+export const portugueseLowercaseLetters = "áàãâäåéèêëíìîïóòõôöúùûüçñýÿ"
+export const portugueseUppercaseLetters = "ÁÀÃÂÄÅÉÈÊËÍÌÎÏÓÒÕÔÖÚÙÛÜÇÑÝŸ"
 
 export const ptExtra = "áàãâäåéèêëíìîïóòõôöúùûüçñýÿÁÀÃÂÄÅÉÈÊËÍÌÎÏÓÒÕÔÖÚÙÛÜÇÑÝŸ"
 export const esExtra = "áéíóúüñÁÉÍÓÚÜÑ¡¿"
