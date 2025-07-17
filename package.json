@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "bin": {
     "fast": "dist/main.js"
   },
