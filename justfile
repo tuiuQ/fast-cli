@@ -31,7 +31,7 @@ publish version="patch":
   npm publish
 
   # 4) 提交 & 推送代码
-  git add package.json pnpm-lock.json
+  git add package.json
   git commit -m "chore: release v${NEW_VERSION}"
   git push origin main    # 如有其他默认分支请自行替换
 
