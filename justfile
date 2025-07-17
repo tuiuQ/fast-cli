@@ -11,6 +11,8 @@ clean:
   @rm -rf ./dist;
 
 dev:
+  @just lint;
+  @just format;
   @just clean;
   @bun run ./build.ts -- --mode=development
 
@@ -19,6 +21,8 @@ watch:
   @watchexec -w src -w ./package.json --exts ts just dev
 
 build:
+  @just lint;
+  @just format;
   @just clean;
   @bun run ./build.ts -- --mode=production
   
