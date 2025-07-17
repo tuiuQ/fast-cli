@@ -2,10 +2,10 @@ commit msg:
   @git commit -m "{{msg}}"
 
 lint:
-  @pnpm lint
+  @npx eslint . --ext .ts
 
 format:
-  @pnpm format
+  @npx prettier --write src/**/*.ts --parser typescript
   
 clean:
   @rm -rf ./dist;
