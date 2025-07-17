@@ -25,7 +25,7 @@ export default [
     rules: {
       ...eslintPluginTypeScript.configs['eslint-recommended'].rules,
       ...eslintPluginTypeScript.configs.recommended.rules,
-      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-explicit-any': 'error',
       'prettier/prettier': 'off',
       // Add custom rules here if needed
     },

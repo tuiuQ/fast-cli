@@ -42,7 +42,7 @@ export class Logger {
   /**
    * 错误日志
    */
-  error(message: string, ...args: any[]): void {
+  error(message: string, ...args: unknown[]): void {
     if (this.level >= LogLevel.ERROR) {
       console.error(`\x1b[31m[ERROR]\x1b[0m ${this.prefix}${message}`, ...args)
     }
@@ -51,7 +51,7 @@ export class Logger {
   /**
    * 警告日志
    */
-  warn(message: string, ...args: any[]): void {
+  warn(message: string, ...args: unknown[]): void {
     if (this.level >= LogLevel.WARN) {
       console.warn(`\x1b[33m[WARN]\x1b[0m ${this.prefix}${message}`, ...args)
     }
@@ -60,7 +60,7 @@ export class Logger {
   /**
    * 信息日志
    */
-  info(message: string, ...args: any[]): void {
+  info(message: string, ...args: unknown[]): void {
     if (this.level >= LogLevel.INFO) {
       console.info(`\x1b[32m[INFO]\x1b[0m ${this.prefix}${message}`, ...args)
     }
@@ -69,7 +69,7 @@ export class Logger {
   /**
    * 调试日志
    */
-  debug(message: string, ...args: any[]): void {
+  debug(message: string, ...args: unknown[]): void {
     if (this.level >= LogLevel.DEBUG) {
       console.debug(`\x1b[36m[DEBUG]\x1b[0m ${this.prefix}${message}`, ...args)
     }
