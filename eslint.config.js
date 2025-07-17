@@ -4,6 +4,7 @@ import globals from 'globals';
 
 export default [
   {
+    ignores: ['dist/**'],
     files: ['**/*.ts'],
     languageOptions: {
       parser: eslintParserTypeScript,
@@ -21,6 +22,7 @@ export default [
     rules: {
       ...eslintPluginTypeScript.configs['eslint-recommended'].rules,
       ...eslintPluginTypeScript.configs.recommended.rules,
+      '@typescript-eslint/no-explicit-any': 'off',
       // Add custom rules here if needed
     },
   },

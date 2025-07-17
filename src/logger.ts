@@ -39,7 +39,6 @@ export class Logger {
     this.level = level
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   /**
    * 错误日志
    */
@@ -49,7 +48,6 @@ export class Logger {
     }
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   /**
    * 警告日志
    */
@@ -59,7 +57,6 @@ export class Logger {
     }
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   /**
    * 信息日志
    */
@@ -69,7 +66,6 @@ export class Logger {
     }
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   /**
    * 调试日志
    */
