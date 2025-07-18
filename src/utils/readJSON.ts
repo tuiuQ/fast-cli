@@ -6,6 +6,6 @@ export async function readJSON<T>(filePath: string): Promise<T> {
 
     return JSON.parse(fileContent) as T
   } catch(error) {
-    throw new Error(`Failed to read json: ${filePath}`)
+    throw new Error(`Failed to read json: ${filePath}: ${(error as Error).message}`)
   }
 }
