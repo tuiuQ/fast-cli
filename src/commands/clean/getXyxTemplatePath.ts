@@ -1,6 +1,6 @@
 import { join } from "path";
-import { xyxTemplatePath } from "./constants";
-import { getXyxTemplateVersion } from "./getXyxTemplateVersion";
+import { xyxTemplatePath } from "./constants.js";
+import { getXyxTemplateVersion } from "./getXyxTemplateVersion.js";
 
 export async function getXyxTemplatePath() {
   const version = await getXyxTemplateVersion();

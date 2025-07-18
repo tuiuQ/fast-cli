@@ -1,8 +1,8 @@
 import type { ISubsetOptions } from "./index"
 import { load, Font } from "opentype.js"
-import { charsetMap } from "./charset"
+import { charsetMap } from "./charset.js"
 import { basename, dirname, extname, join } from "path"
-import { logger } from "../../logger"
+import { logger } from "../../logger.js"
 
 /**
  * 创建字体子集

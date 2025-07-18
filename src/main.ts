@@ -7,9 +7,9 @@
  */
 
 import { Command } from "commander"
-import pkg from "../package.json"
-import { setupCleanCommand } from "./commands/clean"
-import { setupSubsetCommand } from "./commands/subset"
+import pkg from "../package.json" with { type: "json" }
+import { setupCleanCommand } from "./commands/clean/index.js"
+import { setupSubsetCommand } from "./commands/subset/index.js"
 
 /**
  * 创建并配置CLI程序

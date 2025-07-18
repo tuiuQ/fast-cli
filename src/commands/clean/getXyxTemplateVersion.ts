@@ -1,6 +1,6 @@
 import { join } from "path";
-import { readJSON } from "../../utils/readJSON";
-import { xyxTemplatePath } from "./constants";
+import { readJSON } from "../../utils/readJSON.js";
+import { xyxTemplatePath } from "./constants.js";
 
 export async function getXyxTemplateVersion() {
   const xyxTemplateData = await readJSON<{

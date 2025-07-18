@@ -11,9 +11,9 @@ const isProduction = mode === "production";
 build({
   entryPoints: ["./src/**/*.ts"],
   outdir: "dist",
-  format: "cjs",
+  format: "esm",
   minify: isProduction,
   sourcemap: !isProduction,
   platform: "node",
-  target: "node16"
+  target: "node22"
 })
