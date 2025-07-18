@@ -1,7 +1,7 @@
 import type { Command } from "commander"
 import { parseConfigId } from "./parseConfigId.js"
 import { logger } from "../../logger.js"
-import type { IBaseVerboseOptions } from "../../types.js"
+import type { IBaseVerboseOptions } from "../../types/index.js"
 
 /**
  * 清理命令 - 用于清理构建产物
