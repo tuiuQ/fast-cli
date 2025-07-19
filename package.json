@@ -16,7 +16,17 @@
   "files": [
     "dist"
   ],
-  "scripts": {},
+  "scripts": {
+    "test:dev": "vitest --watch",
+    "test:ci":  "vitest run",
+    "fmt":      "biome check --write --diagnostic-level=warn src/",
+    "lint":     "eslint . --ext .ts",
+    "format":   "prettier --write 'src/**/*.ts' --parser typescript",
+    "clean":    "rm -rf dist",
+    "dev":      "pnpm run fmt && pnpm run test:ci && pnpm run clean && bun run ./build.ts --mode=development",
+    "watch":    "watchexec -w src -w package.json --exts ts 'pnpm run dev'",
+    "build":    "pnpm run fmt && pnpm run test:ci && pnpm run clean && bun run ./build.ts --mode=production"
+  },
   "packageManager": "pnpm@10.13.1",
   "devDependencies": {
     "@biomejs/biome": "^2.1.2",
