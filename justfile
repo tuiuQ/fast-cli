@@ -5,10 +5,10 @@ test:
   @./node_modules/.bin/vitest;
 
 lint:
-  @npx eslint . --ext .ts
+  @./node_modules/.bin/eslint . --ext .ts
 
 format:
-  @npx prettier --write src/**/*.ts --parser typescript
+  @./node_modules/.bin/prettier --write src/**/*.ts --parser typescript
   
 clean:
   @rm -rf ./dist;
@@ -16,16 +16,17 @@ clean:
 dev:
   @just lint;
   @just format;
+  @just test;
   @just clean;
   @bun run ./build.ts -- --mode=development
 
 watch:
-  @just clean;
   @watchexec -w src -w ./package.json --exts ts just dev
 
 build:
   @just lint;
   @just format;
+  @just test;
   @just clean;
   @bun run ./build.ts -- --mode=production
   
