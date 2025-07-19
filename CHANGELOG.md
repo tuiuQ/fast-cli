@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/tuiuq/fast-cli/compare/v1.2.2...v1.2.3) (2025-07-19)
+
+
+### Bug Fixes
+
+* trigger initial release ([fb296ed](https://github.com/tuiuq/fast-cli/commit/fb296ed05e62e0e150c45aa13296e6899ff569f2))
+
 ## [1.2.2](https://github.com/tuiuQ/fast-cli/compare/v1.2.1...v1.2.2) (2025-07-19)
 
 
