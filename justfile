@@ -1,6 +1,9 @@
 commit msg:
   @git commit -m "{{msg}}"
 
+test:
+  @./node_modules/.bin/vitest;
+
 lint:
   @npx eslint . --ext .ts
 
