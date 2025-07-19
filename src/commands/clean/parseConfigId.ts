@@ -2,9 +2,9 @@
  * 配置对象接口
  */
 export interface Config {
-  platform: string
-  channel: string
-  publisher: string
+	platform: string;
+	channel: string;
+	publisher: string;
 }
 
 /**
@@ -18,21 +18,21 @@ export interface Config {
  * @throws 当格式无效时抛出错误
  */
 export function parseConfigId(configId: string): Config {
-  if (!configId.trim()) {
-    throw new Error("配置ID不能为空")
-  }
+	if (!configId.trim()) {
+		throw new Error("配置ID不能为空");
+	}
 
-  // Platform@Channel#Publisher
-  const [platformPart, publisherPart = ""] = configId.split("#")
-  const [platform, channel = ""] = platformPart.split("@")
+	// Platform@Channel#Publisher
+	const [platformPart, publisherPart = ""] = configId.split("#");
+	const [platform, channel = ""] = platformPart.split("@");
 
-  if (!platform.trim()) {
-    throw new Error("平台名称不能为空")
-  }
+	if (!platform.trim()) {
+		throw new Error("平台名称不能为空");
+	}
 
-  return {
-    platform: platform.trim(),
-    channel: channel.trim(),
-    publisher: publisherPart.trim(),
-  }
+	return {
+		platform: platform.trim(),
+		channel: channel.trim(),
+		publisher: publisherPart.trim(),
+	};
 }
