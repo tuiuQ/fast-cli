@@ -1,8 +1,10 @@
 commit msg:
   @git commit -m "{{msg}}"
 
-test:
-  @./node_modules/.bin/vitest;
+test mode="development":
+  [ "{{mode}}" = "production" ] \
+    && ./node_modules/.bin/vitest run \
+    || ./node_modules/.bin/vitest --watch
 
 lint:
   @./node_modules/.bin/eslint . --ext .ts
@@ -26,7 +28,7 @@ watch:
 build:
   @just lint;
   @just format;
-  @just test;
+  @just test production;
   @just clean;
   @bun run ./build.ts -- --mode=production
   
