@@ -1,4 +1,4 @@
-import { beforeAll, describe, afterAll, it, expect } from "vitest";
+import { beforeAll, describe, afterAll, it, expect } from "vitest"
 import { existsSync, mkdirSync, writeFileSync, unlinkSync, rmdirSync } from "node:fs"
 import { join } from "node:path"
 import { readJSON } from "./readJSON.js"
@@ -7,7 +7,7 @@ const testDir = join(__dirname, "test_data")
 const testFilePath = join(testDir, "test.json")
 const testData = {
   key: "value",
-  number: 123
+  number: 123,
 }
 
 describe("readJSON", () => {
@@ -15,7 +15,7 @@ describe("readJSON", () => {
     if (!existsSync(testDir)) {
       mkdirSync(testDir)
     }
-    writeFileSync(testFilePath, JSON.stringify(testData));
+    writeFileSync(testFilePath, JSON.stringify(testData))
   })
 
   afterAll(() => {
@@ -29,7 +29,7 @@ describe("readJSON", () => {
   })
 
   it("should throw an error if the file does not exist", async () => {
-    const nonExistentFilePath = join(testDir, 'noexistent.json')
+    const nonExistentFilePath = join(testDir, "noexistent.json")
     await expect(readJSON(nonExistentFilePath)).rejects.toThrow()
   })
 })
