@@ -5,7 +5,7 @@
   "main": "dist/main.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tuiuQ/fast-cli.git"
+    "url": "https://github.com/tuiuq/fast-cli.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
