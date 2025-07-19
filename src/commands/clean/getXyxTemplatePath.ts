@@ -1,4 +1,4 @@
-import { join } from "path";
+import { join } from "node:path";
 import { xyxTemplatePath } from "./constants.js";
 import { getXyxTemplateVersion } from "./getXyxTemplateVersion.js";
 

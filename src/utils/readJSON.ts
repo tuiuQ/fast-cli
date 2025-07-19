@@ -1,4 +1,4 @@
-import { readFile } from "fs/promises";
+import { readFile } from "node:fs/promises";
 
 export async function readJSON<T>(filePath: string): Promise<T> {
 	try {

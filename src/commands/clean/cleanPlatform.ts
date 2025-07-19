@@ -1,5 +1,5 @@
-import { readdir, rm } from "fs/promises";
-import { join } from "path";
+import { readdir, rm } from "node:fs/promises";
+import { join } from "node:path";
 import { logger } from "../../logger.js";
 import type { IBaseVerboseOptions } from "../../types/index.js";
 import { getXyxTemplatePath } from "./getXyxTemplatePath.js";

@@ -1,4 +1,4 @@
-import { join } from "path";
+import { join } from "node:path";
 import { readJSON } from "../../utils/readJSON.js";
 import { xyxTemplatePath } from "./constants.js";
 
