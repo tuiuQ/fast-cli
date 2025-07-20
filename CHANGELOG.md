@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/tuiuq/fast-cli/compare/v1.2.4...v1.3.0) (2025-07-20)
+
+
+### Features
+
+* **utils:** 添加日志工具类Logger实现彩色日志输出 ([08935b2](https://github.com/tuiuq/fast-cli/commit/08935b233c945872b209ea7e4f99a3bee460dec7))
+
 ## [1.2.4](https://github.com/tuiuq/fast-cli/compare/v1.2.3...v1.2.4) (2025-07-19)
 
 
