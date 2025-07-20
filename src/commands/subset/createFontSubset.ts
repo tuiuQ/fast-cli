@@ -1,6 +1,6 @@
 import { Font, load } from "opentype.js";
 import { basename, dirname, extname, join } from "node:path";
-import { logger } from "../../logger.js";
+import { logger } from "../../utils/Logger.js";
 import { charsetMap } from "./charset.js";
 import type { ISubsetOptions } from "./index";
 

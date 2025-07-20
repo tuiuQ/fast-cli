@@ -1,5 +1,5 @@
 import type { Command } from "commander";
-import { logger } from "../../logger.js";
+import { logger } from "../../utils/Logger.js";
 import { createFontSubset } from "./createFontSubset.js";
 
 export interface ISubsetOptions {

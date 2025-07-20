@@ -1,5 +1,5 @@
 import type { Command } from "commander";
-import { logger } from "../../logger.js";
+import { logger, LogLevel } from "../../utils/Logger.js";
 import type { IBaseVerboseOptions } from "../../types/index.js";
 import { cleanPlatform } from "./cleanPlatform.js";
 import { parseConfigId } from "./parseConfigId.js";
@@ -18,7 +18,7 @@ export function setupCleanCommand(program: Command) {
 				const config = parseConfigId(configId);
 
 				if (options.verbose) {
-					logger.setLevel(3); // DEBUG level
+					logger.setLevel(LogLevel.DEBUG); // DEBUG level
 				}
 
 				logger.info(`开始清理: ${configId}`);
