@@ -1,8 +1,8 @@
 import type { Command } from "commander";
-import { logger, LogLevel } from "../../utils/Logger.js";
 import type { IBaseVerboseOptions } from "../../types/index.js";
-import { cleanPlatform } from "./cleanPlatform.js";
+import { LogLevel, logger } from "../../utils/Logger.js";
 import { parseConfigId } from "../../utils/parseConfigId.js";
+import { cleanPlatform } from "./cleanPlatform.js";
 
 /**
  * 清理命令 - 用于清理构建产物
