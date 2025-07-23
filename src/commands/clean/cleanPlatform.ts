@@ -3,7 +3,7 @@ import { join } from "node:path";
 import { logger } from "../../utils/Logger.js";
 import type { IBaseVerboseOptions } from "../../types/index.js";
 import { getXyxTemplatePath } from "./getXyxTemplatePath.js";
-import { parseConfigId } from "./parseConfigId.js";
+import { parseConfigId } from "../../utils/parseConfigId.js";
 
 export async function cleanPlatform(
 	configId: string,
