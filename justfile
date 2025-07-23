@@ -1,10 +1,8 @@
 commit msg:
   @git commit -m "{{msg}}"
 
-test mode="development":
-  @[ "{{mode}}" = "production" ] \
-    && ./node_modules/.bin/vitest run \
-    || ./node_modules/.bin/vitest --watch
+test:
+  @./node_modules/.bin/vitest run
 
 fmt:
   @./node_modules/.bin/biome check --write --diagnostic-level=warn src/;
@@ -19,8 +17,6 @@ clean:
   @rm -rf ./dist;
 
 dev:
-  @just fmt;
-  @just test production;
   @just clean;
   @bun run ./build.ts -- --mode=development
 
@@ -29,6 +25,6 @@ watch:
 
 build:
   @just fmt;
-  @just test production;
+  @just test;
   @just clean;
   @bun run ./build.ts -- --mode=production
