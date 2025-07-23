@@ -1,6 +1,4 @@
-/**
- * Fast CLI 主入口文件
- *
+/** Fast CLI 主入口文件
  * 提供字体子集化和清理功能的命令行工具
  *
  * @fileoverview 主程序入口，负责初始化命令行界面和注册所有子命令
@@ -9,6 +7,7 @@
 import { Command } from "commander";
 import pkg from "../package.json" with { type: "json" };
 import { setupCleanCommand } from "./commands/clean/index.js";
+import { setupResultCommand } from "./commands/result/index.js";
 import { setupSubsetCommand } from "./commands/subset/index.js";
 
 /**
@@ -24,6 +23,7 @@ program.version(pkg.version, "-v, --version", "显示版本号");
  */
 setupCleanCommand(program);
 setupSubsetCommand(program);
+setupResultCommand(program);
 
 /**
  * 解析并执行命令
