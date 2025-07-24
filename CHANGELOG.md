@@ -1,3 +1,11 @@
+# [1.5.0](https://github.com/tuiuq/fast-cli/compare/v1.4.0...v1.5.0) (2025-07-24)
+
+
+### Features
+
+* **commands/result:** 添加结果命令的模板渲染功能 ([c13c589](https://github.com/tuiuq/fast-cli/commit/c13c589a3a3cbc61a5664f499bbbb53dd4dab07c))
+* **utils:** 添加获取XYX配置和路径的工具函数 ([d23afba](https://github.com/tuiuq/fast-cli/commit/d23afbad40d74e45bd0200c79a08934873cc0084))
+
 # [1.4.0](https://github.com/tuiuq/fast-cli/compare/v1.3.0...v1.4.0) (2025-07-24)
 
 
