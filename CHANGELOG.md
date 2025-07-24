@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/tuiuq/fast-cli/compare/v1.3.0...v1.4.0) (2025-07-24)
+
+
+### Features
+
+* 添加显示hippoo平台构建结果的result命令 ([ed60950](https://github.com/tuiuq/fast-cli/commit/ed60950e10d31a71cbf25a42921afcb232576eca))
+
 # [1.3.0](https://github.com/tuiuq/fast-cli/compare/v1.2.4...v1.3.0) (2025-07-20)
 
 
