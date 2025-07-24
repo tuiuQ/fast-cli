@@ -9,6 +9,7 @@ import pkg from "../package.json" with { type: "json" };
 import { setupCleanCommand } from "./commands/clean/index.js";
 import { setupResultCommand } from "./commands/result/index.js";
 import { setupSubsetCommand } from "./commands/subset/index.js";
+import { setupUploadCommand } from "./commands/upload/index.js";
 
 /**
  * 创建并配置CLI程序
@@ -24,6 +25,7 @@ program.version(pkg.version, "-v, --version", "显示版本号");
 setupCleanCommand(program);
 setupSubsetCommand(program);
 setupResultCommand(program);
+setupUploadCommand(program)
 
 /**
  * 解析并执行命令
