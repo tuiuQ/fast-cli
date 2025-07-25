@@ -1,3 +1,11 @@
+# [1.6.0](https://github.com/tuiuq/fast-cli/compare/v1.5.0...v1.6.0) (2025-07-25)
+
+
+### Features
+
+* **upload:** add upload action function ([22cbcc1](https://github.com/tuiuq/fast-cli/commit/22cbcc16dc01b4171eb21a8420be52953ff2b105))
+* **upload:** 添加文件上传命令 ([701d3ae](https://github.com/tuiuq/fast-cli/commit/701d3aebf19f101bbf673420dbc763dbb42a4a80))
+
 # [1.5.0](https://github.com/tuiuq/fast-cli/compare/v1.4.0...v1.5.0) (2025-07-24)
 
 
